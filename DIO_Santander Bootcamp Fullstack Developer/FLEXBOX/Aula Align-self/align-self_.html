@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Align-Self</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            text-align: center;
+        }
+        .align-container {
+            align-items: flex-end;
+        }
+        .item {
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .center {
+            align-self: center;
+        }
+        .start {
+            align-self: flex-start;
+        }
+        .end {
+            align-self: flex-end;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+        .baseline {
+            align-self: baseline;
+        }
+        .auto {
+            align-self: auto;
+        }
+
+        .margin {
+            margin: 100px;
+        }
+        .bcolor1 {
+            background-color: blue;
+        }
+        .bcolor2 {
+            background-color: red;
+        }
+        .bcolor3 {
+            background-color: greenyellow;
+        }
+        .direction {
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>ROW (em Linha)</h1>
+    <section class="flex-container align-container margin bcolor1">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ipsum si not</div>
+        <div class="item auto">Item 4</div>
+    </section>
+    <section class="flex-container bcolor2">
+        <div class="item center">CENTER</div>
+        <div class="item start">START</div>
+        <div class="item stretch">Stretch ipsum dolor sit amet ipsum si not</div>
+        <div class="item end">END 4</div>
+    </section>
+    <section class="flex-container margin bcolor3">
+        <div class="item center">CENTER</div>
+        <div class="item start">START</div>
+        <div class="item end">END</div>
+        <div class="item stretch">Stretch ipsum dolor sit amet </div>
+    </section>
+    <h1>Column(em Coluna)</h1>
+    <section class="flex-container align-container margin bcolor1 direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet ipsum si not</div>
+        <div class="item auto">Item 4</div>
+    </section>
+    <section class="flex-container bcolor2 direction">
+        <div class="item center">CENTER</div>
+        <div class="item start">START</div>
+        <div class="item stretch">Stretch ipsum dolor sit amet ipsum si not</div>
+        <div class="item end">END 4</div>
+    </section>
+    <section class="flex-container margin bcolor3 direction">
+        <div class="item center">CENTER</div>
+        <div class="item start">START</div>
+        <div class="item end">END</div>
+        <div class="item stretch">Stretch ipsum dolor sit amet </div>
+    </section>
+
+</body>
+</html>
